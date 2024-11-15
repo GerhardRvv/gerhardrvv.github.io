@@ -6,19 +6,22 @@
     <title>Gerhard Reyes Vera Vazquez | Software Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMIj3K5PoioBoI3F5gWQUlgp8OJbI7RhWbqj5aU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Function to load the header.html file
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    console.log("Header loaded successfully"); // Debugging
+                    document.querySelector("header").outerHTML = data;
+                })
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header></header>
 
     <!-- Profile Section -->
     <section class="profile-section">
@@ -27,12 +30,6 @@
             <img src="images/Gerhard_pixel.png" alt="Profile Picture">
             <h2>Gerhard Reyes Vera Vazquez</h2>
             <p>Software Engineer</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
         </div>
 
         <!-- About Me Section -->
