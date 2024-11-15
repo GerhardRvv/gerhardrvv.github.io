@@ -1,5 +1,5 @@
 .experience-card {
-    background-color: #2e2e2e;
+    background-color: #2c3e50;
     color: #d4d4d4;
     border: 1px solid #444;
     border-radius: 8px;
@@ -8,6 +8,8 @@
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s;
+    position: relative;
+    z-index: 1;
 }
 
 .experience-card:hover {
@@ -21,7 +23,7 @@
 }
 
 .experience-card p {
-    color: #8e44ad;
+    color: #ce5d29;
     margin-bottom: 1rem;
 }
 

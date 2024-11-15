@@ -4,8 +4,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #fafafa; /* Light background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    background-color: #fafafa ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); 
 }
 
 .navbar {
@@ -28,15 +28,16 @@ header {
 
 .navbar a {
     text-decoration: none;
-    color: #16a085; /* Teal accent for links */
+    color: #ffffff;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #2980b9; /* Light blue for hover effect */
+    color: #2980b9;
 }
 
-/* Ensure body has padding to prevent overlap with fixed navbar */
+
 body {
-    padding-top: 70px; /* Adjust based on navbar height */
+    padding-top: 20px;
 }

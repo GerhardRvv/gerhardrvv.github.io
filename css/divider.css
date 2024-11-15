@@ -1,9 +1,7 @@
-/* Divider Style */
 .divider {
     border: none;
     height: 2px;
-    background-color: #444; /* Dark grey line */
-    margin: 2rem 0; /* Space above and below the line */
-    width: 80%; /* Adjust width as desired */
-    max-width: 800px; /* Limit maximum width */
+    background-color: #ffffff !important; /* Enforce white color */
+    width: 100%;
+    margin: 1rem auto;
 }
